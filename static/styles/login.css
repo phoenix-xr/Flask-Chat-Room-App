@@ -1,0 +1,13 @@
+h2{
+    margin-top: 5px;
+}
+.content-section{
+    margin: auto;
+    width: 50%;
+}
+@media (max-width: 600px) {
+    .content-section{
+        margin: auto;
+        width: 80%;
+    }
+}
