@@ -1,1 +1,1 @@
-web: gunicorn -k gevent -w 1 module:app
+web: gunicorn -w 1 --threads 100 module:app
