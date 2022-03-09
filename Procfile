@@ -1,1 +1,1 @@
-web: gunicorn --worker-class eventlet -w 1 module:app
+web: waitress-serve --listen=*:8000 app:app
