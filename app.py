@@ -9,7 +9,7 @@ from forms import RegistrationForm,LoginForm,CreateRoomForm,EditProfileForm
 from flask_login import LoginManager, current_user, login_user,UserMixin,logout_user,login_required
 #instaciating Flask app
 app = Flask(__name__)
-socketio = SocketIO(app, cors_allowed_origins="*")
+socket = SocketIO(app, cors_allowed_origins="*")
 # Setting database session to your database to use flask-sessions
 app.config['SESSION_TYPE'] = 'sqlalchemy'
 
