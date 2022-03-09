@@ -1,1 +1,1 @@
-web: gunicorn -w 1 --threads 100 module:app
+web:gunicorn --worker-class eventlet -w 1 application:app
