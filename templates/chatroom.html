@@ -95,7 +95,7 @@
         } );
       socket.on( 'recieved_message', function( data ) {
         if (data.message !== ''){
-          $( 'div.messages' ).append( '<div class="card"><div class="card-body"><img src="+data.pic+" width="50px" style=" float: left;padding: 0;width: 60px;height: 60px;border-radius: 50%;"></img><h5 class="card-title" style="margin-left:80px;">'+data.username+'</h5><p class="card-text" style="margin-left:80px;">'+data.message+'</p></div></div>' )
+          $( 'div.messages' ).append( '<div class="card"><div class="card-body"><img src='+data.pic+' width="50px" style=" float: left;padding: 0;width: 60px;height: 60px;border-radius: 50%;"></img><h5 class="card-title" style="margin-left:80px;">'+data.username+'</h5><p class="card-text" style="margin-left:80px;">'+data.message+'</p></div></div>' )
         }
       })
       window.onbeforeunload = function () {
