@@ -1,5 +1,6 @@
 bcrypt==3.2.0
 bidict==0.21.4
+simple-websocket==0.5.1
 cachelib==0.6.0
 cffi==1.15.0
 click==7.1.2
