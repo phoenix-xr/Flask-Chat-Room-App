@@ -42,4 +42,3 @@ WTForms==3.0.1
 zipp==3.7.0
 zope.event==4.5.0
 zope.interface==5.4.0
-fcntl
