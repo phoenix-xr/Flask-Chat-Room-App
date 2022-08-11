@@ -79,7 +79,7 @@ def save_pfp(form_pfp):
     final_filename_for_saving = hex_file_name_gen + ext
     pic_saving_path = os.path.join(app.root_path,'static/pfps',final_filename_for_saving)
 
-    image = Image.open(form_pfp)
+    image = Image.open(form_pfp).resize((150,150)) 
     image.thumbnail((125,125))
     image.save(pic_saving_path)
     prev_picture = os.path.join(app.root_path, 'static/pfps', current_user.pfp)
