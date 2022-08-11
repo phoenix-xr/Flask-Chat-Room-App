@@ -13,6 +13,7 @@
 
 .card{
     margin-bottom: 0%;
+    transition-duration:0.7s;
 }
 @media (max-width: 600px) {
     .message-body{
