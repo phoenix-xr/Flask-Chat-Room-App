@@ -14,7 +14,7 @@ socket = SocketIO(app, cors_allowed_origins="*")
 app.config['SESSION_TYPE'] = 'sqlalchemy'
 
 app.secret_key = 'your secret key here'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://vwooczdkxwmhhi:a3382f062de250238f5367ca7a0c915c4626e80b8e592d14bd1b8dbe1b1836e1@ec2-3-230-238-86.compute-1.amazonaws.com:5432/d4hpsqc93h6g18'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///./test.db'
 
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
@@ -216,4 +216,4 @@ def handle_leave_room_event(data):
     emit('leave_room_message', data, room=data['room'])
     
 if __name__ == '__main__':
-    socket.run(app)
+    socket.run(app,host='0.0.0.0')
